@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#151746">
+    <meta name="description" content="Teresa's personal digital trading card.">
+    <title>Teresa's Digital Trading Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <p class="eyebrow">THE ONE-OF-A-KIND SERIES</p>
+
+      <article class="trading-card" aria-labelledby="card-name">
+        <div class="card-flipper">
+          <div class="card-face card-front">
+            <div class="card-inner">
+              <header class="card-top">
+                <div>
+                  <p class="card-label">STUDENT EDITION <span class="header-wave" aria-label="wave">🌊</span></p>
+                  <h1 id="card-name">Teresa</h1>
+                </div>
+                <div class="star-badge" aria-label="One of one">★<span>01</span></div>
+              </header>
+
+              <section class="portrait" aria-label="Decorative illustrated portrait">
+                <span class="orbit orbit-one"></span>
+                <span class="orbit orbit-two"></span>
+                <span class="spark spark-one">✦</span>
+                <span class="spark spark-two">✧</span>
+                <span class="spark spark-three">✦</span>
+                <div class="avatar" aria-hidden="true">
+                  <span class="avatar-hair"></span>
+                  <span class="avatar-face"></span>
+                  <span class="avatar-body"></span>
+                  <span class="avatar-bow">✿</span>
+                  <span class="avatar-star">✦</span>
+                </div>
+                <span class="portrait-caption">RARE HUMAN / LV. 01</span>
+              </section>
+
+              <div class="major-row">
+                <span class="type-icon" aria-hidden="true">💧</span>
+                <div>
+                  <p class="card-label">WATER TYPE</p>
+                  <p class="major">Computer Science</p>
+                </div>
+                <span class="level">LV.<strong>01</strong></span>
+              </div>
+
+              <section class="stats" aria-label="Card stats">
+                <div class="stat">
+                  <span class="stat-name">Snack Power</span>
+                  <div class="stat-track" role="progressbar" aria-label="Snack Power" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                    <span class="stat-fill" style="--stat-value: 90%"></span>
+                  </div>
+                  <span class="stat-value">90</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-name">Swimming Energy</span>
+                  <div class="stat-track" role="progressbar" aria-label="Swimming Energy" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+                    <span class="stat-fill" style="--stat-value: 85%"></span>
+                  </div>
+                  <span class="stat-value">85</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-name">Coding Courage</span>
+                  <div class="stat-track" role="progressbar" aria-label="Coding Courage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+                    <span class="stat-fill" style="--stat-value: 95%"></span>
+                  </div>
+                  <span class="stat-value">95</span>
+                </div>
+              </section>
+
+              <section class="ability" aria-labelledby="ability-title">
+                <div class="ability-heading">
+                  <span class="ability-icon" aria-hidden="true">⚡</span>
+                  <p class="card-label">SPECIAL ABILITY</p>
+                </div>
+                <h2 id="ability-title">Just Keep Swimming</h2>
+                <p class="ability-description">Swims through bugs and comes back stronger after a snack.</p>
+                <button class="ability-button" type="button" aria-pressed="false">
+                  <span class="button-spark" aria-hidden="true">✦</span>
+                  <span class="button-label">Activate ability</span>
+                </button>
+                <p class="activation-message" role="status" aria-live="polite"></p>
+              </section>
+
+              <footer class="card-footer">
+                <span>Hand-directed by me, built with AI</span>
+              </footer>
+            </div>
+          </div>
+
+          <div class="card-face card-back" aria-label="Card back">
+            <div class="back-decoration" aria-hidden="true">✦</div>
+            <p class="card-label">A LITTLE SOMETHING ABOUT ME</p>
+            <div class="back-watermark" aria-hidden="true">💧</div>
+            <p class="fun-fact">I love swimming and superhero movies.</p>
+            <span class="back-caption">TERESA · WATER TYPE</span>
+          </div>
+        </div>
+      </article>
+
+      <section class="battle" aria-labelledby="battle-title">
+        <div class="battle-heading">
+          <span class="battle-die" aria-hidden="true">🎲</span>
+          <div>
+            <p class="card-label">WATER TYPE CHALLENGE</p>
+            <h2 id="battle-title">Battle!</h2>
+          </div>
+        </div>
+        <p class="battle-instructions">Roll your card stats against a random opponent.</p>
+        <div class="battle-scores" aria-label="Battle scores">
+          <div class="battle-score">
+            <span>Teresa</span>
+            <strong id="player-score">—</strong>
+          </div>
+          <span class="battle-versus" aria-hidden="true">VS</span>
+          <div class="battle-score">
+            <span>Opponent</span>
+            <strong id="opponent-score">—</strong>
+          </div>
+        </div>
+        <button class="battle-button" type="button">Roll for battle</button>
+        <p class="battle-result" role="status" aria-live="polite">Ready when you are!</p>
+      </section>
+
+      <p class="page-note">A little card for a very big personality.</p>
+    </main>
+  </body>
+</html>
